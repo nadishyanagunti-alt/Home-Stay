@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Wooden Cottage",
+    "price": 3500,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
+    "short_description": "Cozy wooden cottage with mountain views.",
+    "description": "Enjoy peaceful mornings, foggy mountain views, wooden interiors, and a relaxing fireplace experience in this beautiful cottage.",
+    "features": [
+      "Mountain View",
+      "Free WiFi",
+      "Fireplace",
+      "Hot Water",
+      "Balcony"
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Luxury Family Suite",
+    "price": 5000,
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop",
+    "short_description": "Spacious suite for families.",
+    "description": "A premium suite with large rooms, beautiful interiors, and a comfortable stay perfect for families and groups.",
+    "features": [
+      "2 Bedrooms",
+      "TV",
+      "Room Service",
+      "Hill View",
+      "Free Breakfast"
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Couple Retreat",
+    "price": 4200,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
+    "short_description": "Romantic room for couples.",
+    "description": "Perfect romantic getaway with candle-light setup, private balcony, and peaceful atmosphere.",
+    "features": [
+      "Private Balcony",
+      "Candle Light Dinner",
+      "King Size Bed",
+      "Mountain View",
+      "Bonfire Access"
+    ]
+  }
+]
