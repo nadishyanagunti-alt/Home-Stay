@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room Details</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+nav{
+    background:#032f4f;
+    color:white;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ff6b00;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.room-image{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.content{
+    padding:40px;
+}
+
+.content h1{
+    color:#032f4f;
+    margin-bottom:20px;
+}
+
+.content p{
+    line-height:1.8;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:28px;
+    color:#ff6b00;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.features{
+    margin-bottom:30px;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#ff6b00;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Misty<span>Hills</span></div>
+</nav>
+
+<div class="container" id="roomDetails"></div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const roomId = params.get("id");
+
+fetch("rooms.json")
+.then(response => response.json())
+.then(data => {
+
+    const room = data.find(r => r.id == roomId);
+
+    const container = document.getElementById("roomDetails");
+
+    container.innerHTML = `
+
+        <img src="${room.image}" class="room-image">
+
+        <div class="content">
+
+            <h1>${room.name}</h1>
+
+            <div class="price">₹${room.price} / night</div>
+
+            <p>${room.description}</p>
+
+            <h3>Features</h3>
+
+            <ul class="features">
+                ${room.features.map(feature => `<li>✔ ${feature}</li>`).join("")}
+            </ul>
+
+            <a href="#" class="btn">Book Now</a>
+
+        </div>
+
+    `;
+
+});
+
+</script>
+
+</body>
+</html>
