@@ -45,5 +45,20 @@
       "Mountain View",
       "Bonfire Access"
     ]
+  },
+  {
+    "id": 3,
+    "name": "Hotel Sepoy Grande",
+    "price": 1619,
+    "image": "https://lh3.googleusercontent.com/proxy/rA5p9CotFMg_2LmSuma39cGx32H6-Y1DOoel2ru74V12XLdWpSni9c5JcQGDIl6bvy6pfJw18qpUuKopvs7CIlwLkzPznYtkokpbOU163V1zT60mhnGnuGFWv_-9eGVMJejHkwDgj462GPs1Au_FIu9a3P2upLg=w574-h384-n-k-rw-no-v1",
+    "short_description": "Romantic room for couples",
+    "description": "Perfect romantic getaway with candle-light setup, private balcony, and peaceful atmosphere.",
+    "features": [
+      "Private Balcony",
+      "Candle Light Dinner",
+      "King Size Bed",
+      "Mountain View",
+      "Bonfire Access"
+    ]
   }
 ]
